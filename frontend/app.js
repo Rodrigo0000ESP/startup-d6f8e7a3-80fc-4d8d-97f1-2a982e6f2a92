@@ -1,4 +1,18 @@
-1. Receive extracted receipt data
-2. Categorize the data into relevant sections (e.g., date, amount, hotel name)
-3. Generate a CSV file with the categorized data
-4. Return the formatted CSV file
+const fs = require('fs');
+
+function generateCSV(extractedData) {
+  const categorizedData = categorizeData(extractedData);
+  const csvData = convertToCSV(categorizedData);
+  fs.writeFileSync('output.csv', csvData);
+  return 'output.csv';
+}
+
+function categorizeData(data) {
+  // Categorization logic here
+  return categorizedData;
+}
+
+function convertToCSV(data) {
+  // CSV conversion logic here
+  return csvData;
+}
