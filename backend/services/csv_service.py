@@ -1,0 +1,1 @@
+The CSV service will take the input data, categorize it based on predefined criteria, and generate a CSV file with the categorized data. This involves processing the OCR-extracted data, organizing it into columns, and ensuring the correct format for export.
