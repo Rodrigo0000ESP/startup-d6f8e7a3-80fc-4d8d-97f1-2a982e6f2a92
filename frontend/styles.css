@@ -1,1 +1,28 @@
-This file contains CSS styling rules to control the layout, colors, fonts, and overall visual styling of the frontend application.
+/* CSS styling rules for frontend application */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333333;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Add more styling rules as needed */
