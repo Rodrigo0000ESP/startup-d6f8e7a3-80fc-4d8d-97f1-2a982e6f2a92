@@ -1,1 +1,1 @@
-The file contains SQL queries for creating tables to store receipt data, user information, and any additional metadata needed for the application. It defines the schema, relationships, and constraints for the database.
+CREATE TABLE Receipts (receipt_id INT PRIMARY KEY, user_id INT, amount DECIMAL, receipt_date DATE); CREATE TABLE Users (user_id INT PRIMARY KEY, name VARCHAR(100), email VARCHAR(100));
