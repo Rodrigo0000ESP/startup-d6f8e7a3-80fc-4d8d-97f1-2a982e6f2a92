@@ -1,0 +1,1 @@
+The file contains SQL queries for creating tables to store receipt data, user information, and any additional metadata needed for the application. It defines the schema, relationships, and constraints for the database.
