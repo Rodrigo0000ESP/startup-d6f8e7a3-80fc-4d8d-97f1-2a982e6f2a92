@@ -1,0 +1,1 @@
+1. Receive the uploaded hotel receipt file. 2. Call the OCR service to extract data from the receipt using OCR technology. 3. Send the extracted data to the CSV service to generate a CSV file with categorized data. 4. Return the processed CSV file to the user.
