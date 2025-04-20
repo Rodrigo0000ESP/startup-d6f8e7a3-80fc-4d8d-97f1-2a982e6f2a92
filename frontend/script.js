@@ -1,16 +1,5 @@
-// frontend/script.js
-
-// 1. Listen for user input to upload hotel receipts
-function handleReceiptUpload() {
-  // Code to handle uploading receipts
-}
-
-// 2. Send the extracted OCR data to the backend for CSV generation
-function sendOCRDataToBackend(ocrData) {
-  // Code to send OCR data to backend
-}
-
-// 3. Receive the converted CSV file and display it for user download
-function displayCSVFile(csvFile) {
-  // Code to display CSV file for download
-}
+1. Receive data extracted from hotel receipts in text or image format.
+2. Utilize OCR technology to extract relevant information such as date, amount, items, and taxes.
+3. Organize the extracted data into a structured format suitable for CSV conversion.
+4. Generate a CSV file containing the categorized information.
+5. Provide the option for manual corrections if inaccuracies or missing data are detected.
