@@ -1,5 +1,4 @@
-1. Receive the uploaded hotel receipt image.
-2. Utilize OCR technology (such as Tesseract or Google Cloud Vision) to extract data like date, amount, and vendor from the image.
-3. Organize the extracted data into a CSV file with categorized information.
-4. Provide functionality for users to review and confirm the extracted data before converting it.
-5. Implement error handling for cases where data extraction is incomplete or inaccurate.
+1. Create necessary tables in the database to store receipt data and categorized expenses
+2. Insert the extracted data into the database
+3. Update or categorize the expense data in the database
+4. Retrieve the structured data from the database for CSV generation
