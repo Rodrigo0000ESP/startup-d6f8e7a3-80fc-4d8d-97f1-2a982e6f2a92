@@ -1,5 +1,10 @@
-1. Receive a hotel receipt image as input.
-2. Utilize OCR technology to extract text from the receipt image.
-3. Validate and organize the extracted information into structured data fields.
-4. Generate a CSV file with the organized data.
-5. Return the structured CSV data as output.
+def process_receipt_image(image):
+    extracted_text = ocr_service.extract_text(image)
+    structured_data = generate_csv_data(extracted_text)
+    return structured_data
+
+@app.route('/process_receipt', methods=['POST'])
+def process_receipt():
+    image = request.files['image']
+    structured_data = process_receipt_image(image)
+    return Response(structured_data, mimetype='text/csv')
