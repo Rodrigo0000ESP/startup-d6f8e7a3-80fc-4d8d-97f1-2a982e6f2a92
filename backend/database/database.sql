@@ -1,3 +1,5 @@
-1. Receive the extracted text data from hotel receipt images.
-2. Map the extracted data to customizable fields for the CSV output.
-3. Generate a CSV file with the mapped data in the specified format.
+CREATE TABLE HotelReceipts (id INT, extracted_text TEXT);
+
+-- TODO: Add SQL code here to map extracted data to customizable fields and generate CSV output
+
+SELECT * FROM HotelReceipts;
