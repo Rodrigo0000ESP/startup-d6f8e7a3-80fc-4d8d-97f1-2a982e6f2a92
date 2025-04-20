@@ -1,29 +1,5 @@
-const fileInput = document.getElementById('fileInput');
-
-fileInput.addEventListener('change', async function(event) {
-  const file = event.target.files[0];
-
-  const formData = new FormData();
-  formData.append('receiptImage', file);
-
-  const ocrResponse = await fetch('/api/ocr', {
-    method: 'POST',
-    body: formData
-  });
-
-  const ocrData = await ocrResponse.json();
-
-  const csvResponse = await fetch('/api/csv', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      textData: ocrData
-    })
-  });
-
-  const csvData = await csvResponse.json();
-
-  // Display or allow download of csvData
-});
+1. Receive hotel receipt image file.
+2. Use OCR technology to extract text from the image.
+3. Perform data validation to ensure accuracy and completeness.
+4. Organize the extracted data fields into a CSV format.
+5. Return the structured CSV data.
