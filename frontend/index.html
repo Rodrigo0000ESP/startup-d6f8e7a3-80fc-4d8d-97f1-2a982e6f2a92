@@ -1,1 +1,29 @@
-The file contains SQL queries to create tables such as 'receipts', 'hotels', 'users', 'expenses' with appropriate columns like 'receipt_id', 'hotel_name', 'user_id', 'expense_amount', etc. It establishes relationships among the tables through foreign keys.
+const fileInput = document.getElementById('fileInput');
+
+fileInput.addEventListener('change', async function(event) {
+  const file = event.target.files[0];
+
+  const formData = new FormData();
+  formData.append('receiptImage', file);
+
+  const response = await fetch('/api/ocr', {
+    method: 'POST',
+    body: formData
+  });
+
+  if (response.ok) {
+    const textData = await response.text();
+    const csvData = convertToCSV(textData);
+    downloadCSV(csvData);
+  } else {
+    console.error('Error processing OCR');
+  }
+});
+
+function convertToCSV(textData) {
+  // Logic to convert text data to CSV format
+}
+
+function downloadCSV(csvData) {
+  // Logic to display or provide CSV data for download
+}
