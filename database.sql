@@ -1,4 +1,1 @@
-1. Create necessary tables in the database to store receipt data and categorized expenses
-2. Insert the extracted data into the database
-3. Update or categorize the expense data in the database
-4. Retrieve the structured data from the database for CSV generation
+The file contains SQL queries to create tables such as receipts, hotels, customers, transactions, etc., with appropriate fields to store relevant information like receipt number, hotel details, customer information, transaction data, etc. It establishes the relationships between these tables through foreign keys to maintain data integrity.
