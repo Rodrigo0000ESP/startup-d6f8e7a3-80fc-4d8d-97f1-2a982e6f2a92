@@ -1,1 +1,6 @@
-The file contains SQL statements to create necessary tables such as 'receipts' with columns like 'date', 'vendor', 'total_amount', etc. It defines relationships between tables for data integrity and enforces constraints such as unique keys or not null constraints.
+CREATE TABLE receipts (
+    date DATE NOT NULL,
+    vendor VARCHAR(255) NOT NULL,
+    total_amount DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (date, vendor)
+);
