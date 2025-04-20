@@ -1,7 +1,1 @@
-CREATE TABLE receipts (
-    id SERIAL PRIMARY KEY,
-    date DATE,
-    amount DECIMAL,
-    items TEXT[],
-    taxes DECIMAL
-);
+CREATE TABLE receipts (id SERIAL PRIMARY KEY, date DATE, amount DECIMAL, items TEXT[], taxes DECIMAL);
