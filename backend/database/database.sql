@@ -1,0 +1,1 @@
+The core logic involves taking the structured data input, processing it to adhere to CSV formatting rules, handling any necessary data transformation or validation, and then writing the formatted data to a CSV file. This may include defining headers, escaping characters, handling quotes, and managing line terminations to comply with CSV standards.
