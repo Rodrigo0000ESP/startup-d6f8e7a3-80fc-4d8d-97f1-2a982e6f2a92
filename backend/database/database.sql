@@ -1,2 +1,5 @@
-1. Define SQL queries for creating tables to store hotel receipt information such as receipt date, amount, hotel name, etc.
-2. Execute the SQL queries to create the required database tables.
+1. Receive the raw text data extracted from OCR processing.
+2. Validate and organize the extracted data fields.
+3. Generate a CSV file with the organized data fields.
+4. Ensure the CSV format is compatible with accounting software.
+5. Return the structured CSV data.
