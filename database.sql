@@ -1,1 +1,1 @@
-The file contains SQL queries to create tables for storing hotel receipt data such as receipt ID, date, total amount, vendor information, and other relevant details. It establishes relationships between these tables to ensure data integrity and efficient querying.
+CREATE TABLE hotel_receipts (receipt_date DATE, amount DECIMAL(10, 2), hotel_name VARCHAR(255));
