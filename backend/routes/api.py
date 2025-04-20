@@ -1,4 +1,5 @@
-1. Receive a hotel receipt image for OCR processing.
-2. Call the OCR service to extract text information from the receipt image.
-3. Organize the extracted text data into a structured CSV format.
-4. Return the structured CSV data.
+1. Import necessary libraries like Pytesseract for OCR processing and PIL or OpenCV for image loading.
+2. Preprocess the image for OCR accuracy by converting to grayscale, resizing, and adjusting contrast.
+3. Apply OCR using Pytesseract to extract text from the preprocessed image.
+4. Clean and format the extracted text to remove unwanted characters or spaces.
+5. Pass the cleaned text to the csv_generator module for CSV data generation.
