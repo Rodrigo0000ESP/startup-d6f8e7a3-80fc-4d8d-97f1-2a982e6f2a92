@@ -1,1 +1,13 @@
-1. Receive the hotel receipt image data for processing.\n2. Use OCR technology to extract text from the image.\n3. Process the extracted text to structure it into organized data fields.\n4. Return the structured text data for further processing or storage.
+import pytesseract
+from PIL import Image
+
+
+def perform_ocr(image_path):
+    image = Image.open(image_path)
+    image = image.convert('L')  # Convert to grayscale
+    text = pytesseract.image_to_string(image)
+    cleaned_text = ' '.join(text.split())  # Remove extra spaces
+    return cleaned_text
+
+# Example usage:
+# cleaned_text = perform_ocr('path/to/image.jpg')
