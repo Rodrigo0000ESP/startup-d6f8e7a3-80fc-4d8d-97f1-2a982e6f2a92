@@ -1,5 +1,3 @@
-1. Receive the raw text data extracted from OCR processing.
-2. Validate and organize the extracted data fields.
-3. Generate a CSV file with the organized data fields.
-4. Ensure the CSV format is compatible with accounting software.
-5. Return the structured CSV data.
+1. Receive the extracted text data from hotel receipt images.
+2. Map the extracted data to customizable fields for the CSV output.
+3. Generate a CSV file with the mapped data in the specified format.
