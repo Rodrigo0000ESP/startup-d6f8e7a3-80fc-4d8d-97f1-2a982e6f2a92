@@ -1,17 +1,5 @@
-```html
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Receipt Management System</title>
-</head>
-<body>
-    <h1>Welcome to Receipt Management System</h1>
-    <input type='file' id='receiptFile' name='receiptFile' accept='.pdf, .jpg, .png'>
-    <button id='uploadReceiptBtn'>Upload Receipt</button>
-    <div id='receiptList'></div>
-</body>
-</html>
-```
+1. Receive the hotel receipt image file.
+2. Use OCR technology to extract data from the image.
+3. Process the extracted data and categorize it (e.g., date, amount, hotel name).
+4. Generate a CSV file with the categorized data.
+5. Return the CSV file.
