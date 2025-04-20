@@ -1,4 +1,20 @@
-1. Receive HTTP request with hotel receipt image or data.
-2. Call OCR module to extract data from the receipt.
-3. Format the extracted data into a CSV file.
-4. Return the CSV file or error message in the HTTP response.
+from flask import Flask, request, jsonify
+import ocr_module
+import csv
+
+app = Flask(__name__)
+
+@app.route('/api/hotel_receipt', methods=['POST'])
+def extract_data():
+    receipt_data = request.data
+    extracted_data = ocr_module.extract_data(receipt_data)
+    if extracted_data:
+        with open('hotel_receipt.csv', 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(extracted_data)
+        return send_file('hotel_receipt.csv', as_attachment=True)
+    else:
+        return jsonify({'error': 'Failed to extract data from receipt'})
+
+if __name__ == '__main__':
+    app.run()
