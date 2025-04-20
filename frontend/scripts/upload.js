@@ -1,5 +1,12 @@
-1. Receive hotel receipt image as input.
-2. Use OCR technology to extract text from the image.
-3. Perform data validation to ensure accuracy of extracted information.
-4. Generate a CSV file with customizable fields to fit different accounting software requirements.
-5. Return the structured CSV data as output.
+const uploadReceipt = (image) => {
+  // OCR technology to extract text from image
+  const extractedText = OCR.extractText(image);
+
+  // Perform data validation
+  const validatedData = validateData(extractedText);
+
+  // Generate CSV file
+  const csvData = generateCSV(validatedData);
+
+  return csvData;
+}
