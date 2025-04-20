@@ -1,1 +1,0 @@
-Receive the HTTP request with the receipt image or data, pass it to the OCR service to extract relevant information, process the data to generate a CSV file with categorized details, and return the CSV file or processed data as a response.
