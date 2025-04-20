@@ -1,0 +1,1 @@
+The core logic includes event listeners for user actions (e.g., file upload), AJAX requests to the backend API endpoints for processing the receipts, handling the responses from the backend (errors or parsed data), and providing the user with the ability to manually correct data and initiate the download of the CSV file.
