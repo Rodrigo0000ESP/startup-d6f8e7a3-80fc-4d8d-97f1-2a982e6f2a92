@@ -1,1 +1,1 @@
-The file contains SQL queries to create tables for storing hotel receipt data such as receipt ID, date, total amount, vendor information, and other relevant details. It establishes relationships between these tables to ensure data integrity and efficient querying.
+The file contains SQL statements to create necessary tables such as 'receipts' with columns like 'date', 'vendor', 'total_amount', etc. It defines relationships between tables for data integrity and enforces constraints such as unique keys or not null constraints.
