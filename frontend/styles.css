@@ -1,28 +1,29 @@
-/* CSS styling rules for frontend application */
-
+/* CSS styling rules for frontend styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
 
-h1 {
-  color: #333333;
-  font-size: 24px;
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .button {
   background-color: #007bff;
-  color: #ffffff;
+  color: white;
   padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Add more styling rules as needed */
