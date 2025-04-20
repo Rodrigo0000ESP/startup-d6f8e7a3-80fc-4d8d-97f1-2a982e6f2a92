@@ -1,1 +1,0 @@
-The upload.js file will handle the user interface for selecting and uploading images of hotel receipts. It will trigger the OCR data extraction process on the backend and display the extracted data to the user. Once the data is extracted, it will facilitate the generation of a CSV file with categorized expense data for the user to download.
