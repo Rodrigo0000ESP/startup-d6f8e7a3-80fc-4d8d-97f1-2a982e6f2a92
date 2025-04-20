@@ -1,4 +1,1 @@
-1. Load the hotel receipt image data for OCR processing.
-2. Utilize OCR technology to extract text information from the receipt image.
-3. Parse and organize the extracted text data into a structured CSV format.
-4. Return the structured CSV data for further processing or display.
+1. Receive the hotel receipt image data for processing.\n2. Use OCR technology to extract text from the image.\n3. Process the extracted text to structure it into organized data fields.\n4. Return the structured text data for further processing or storage.
