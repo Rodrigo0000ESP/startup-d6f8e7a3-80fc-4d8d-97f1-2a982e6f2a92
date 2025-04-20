@@ -1,1 +1,1 @@
-The file 'database.sql' contains SQL queries to create tables for storing hotel receipts data, defining relationships between tables, and performing CRUD operations on the data.
+CREATE TABLE IF NOT EXISTS Hotels (hotel_id INT PRIMARY KEY, name TEXT NOT NULL, location TEXT NOT NULL); CREATE TABLE IF NOT EXISTS Receipts (receipt_id INT PRIMARY KEY, hotel_id INT, amount DECIMAL NOT NULL, date DATE NOT NULL, FOREIGN KEY (hotel_id) REFERENCES Hotels(hotel_id) ON DELETE CASCADE);
