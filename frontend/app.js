@@ -1,18 +1,24 @@
 const fs = require('fs');
 
-function generateCSV(extractedData) {
-  const categorizedData = categorizeData(extractedData);
-  const csvData = convertToCSV(categorizedData);
-  fs.writeFileSync('output.csv', csvData);
-  return 'output.csv';
+function generateCSV(receiptData) {
+  const { date, amount, hotelName } = receiptData;
+
+  const csvData = `Date,Amount,Hotel Name
+${date},${amount},${hotelName}`;
+
+  fs.writeFile('receipt_data.csv', csvData, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log('CSV file generated successfully');
+    }
+  });
 }
 
-function categorizeData(data) {
-  // Categorization logic here
-  return categorizedData;
-}
+const extractedReceiptData = {
+  date: '2022-01-01',
+  amount: 100.50,
+  hotelName: 'Example Hotel'
+};
 
-function convertToCSV(data) {
-  // CSV conversion logic here
-  return csvData;
-}
+generateCSV(extractedReceiptData);
