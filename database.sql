@@ -1,1 +1,7 @@
-CREATE TABLE IF NOT EXISTS Hotels (hotel_id INT PRIMARY KEY, name TEXT NOT NULL, location TEXT NOT NULL); CREATE TABLE IF NOT EXISTS Receipts (receipt_id INT PRIMARY KEY, hotel_id INT, amount DECIMAL NOT NULL, date DATE NOT NULL, FOREIGN KEY (hotel_id) REFERENCES Hotels(hotel_id) ON DELETE CASCADE);
+CREATE TABLE receipts (
+    id SERIAL PRIMARY KEY,
+    date DATE,
+    amount DECIMAL,
+    items TEXT[],
+    taxes DECIMAL
+);
