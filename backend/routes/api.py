@@ -1,21 +1,5 @@
-from flask import Flask, request, jsonify
-from services.ocr import extract_text
-from services.csv_generator import create_csv
-
-app = Flask(__name__)
-
-@app.route('/upload', methods=['POST'])
-def upload_file():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'}), 400
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'}), 400
-    if file:
-        text = extract_text(file)
-        if text is None:
-            return jsonify({'error': 'OCR failed'}), 500
-        csv_file = create_csv(text)
-        if csv_file is None:
-            return jsonify({'error': 'CSV generation failed'}), 500
-        return jsonify({'message': 'File processed successfully', 'csv_file': csv_file}), 200
+1. Receive a hotel receipt image through an HTTP POST request.
+2. Use the OCR functionality from 'backend/services/ocr.py' to extract text from the image.
+3. Clean and format the extracted text to remove unwanted characters or spaces.
+4. Pass the cleaned text to the CSV generation logic in 'backend/services/csv_generator.py' for organization into CSV format.
+5. Return the structured CSV data.
