@@ -1,1 +1,5 @@
-1. Receive the hotel receipt image data for processing.\n2. Use OCR technology to extract text from the image.\n3. Process the extracted text to structure it into organized data fields.\n4. Return the structured text data for further processing or storage.
+1. Load the hotel receipt image.
+2. Use OCR technology to extract text from the image.
+3. Perform data cleaning and validation on the extracted text.
+4. Format the extracted text into a structured format.
+5. Pass the structured text data to the csv_generator for CSV generation.
