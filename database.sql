@@ -1,1 +1,1 @@
-CREATE TABLE Receipts (receipt_id INT PRIMARY KEY, user_id INT, amount DECIMAL, receipt_date DATE); CREATE TABLE Users (user_id INT PRIMARY KEY, name VARCHAR(100), email VARCHAR(100));
+The file 'database.sql' contains SQL queries to create tables for storing hotel receipts data, defining relationships between tables, and performing CRUD operations on the data.
