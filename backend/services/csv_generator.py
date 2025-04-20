@@ -1,0 +1,1 @@
+1. Read the hotel receipt data from the input CSV file
