@@ -1,1 +1,0 @@
-The file contains a series of SQL commands executed in sequence to set up the database schema. This typically includes CREATE TABLE statements to define the structure of each table, along with the data types and constraints for each column (e.g., PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL). It may also include INSERT statements for seeding the database with initial data.
